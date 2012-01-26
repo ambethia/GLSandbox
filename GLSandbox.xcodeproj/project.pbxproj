@@ -36,8 +36,8 @@
 		BACDB6DF14D0FEF9008AAC15 /* sandbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sandbox.c; path = Triangle/sandbox.c; sourceTree = "<group>"; };
 		BACDB6E014D0FEF9008AAC15 /* shader.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shader.f.glsl; path = Triangle/shader.f.glsl; sourceTree = "<group>"; };
 		BACDB6E114D0FEF9008AAC15 /* shader.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shader.v.glsl; path = Triangle/shader.v.glsl; sourceTree = "<group>"; };
-		BACDB6E514D0FF5F008AAC15 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utility.h; path = Triangle/utility.h; sourceTree = "<group>"; };
-		BACDB6E614D10039008AAC15 /* utility.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = utility.c; path = GLSandbox/utility.c; sourceTree = "<group>"; };
+		BACDB6E614D10039008AAC15 /* utility.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utility.c; sourceTree = "<group>"; };
+		BACDB6EE14D111C6008AAC15 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
 		BADE992014D0DEDD00F2CA68 /* GLSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BADE992414D0DEDD00F2CA68 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BADE992714D0DEDD00F2CA68 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -84,10 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				BACDB6DF14D0FEF9008AAC15 /* sandbox.c */,
-				BACDB6E614D10039008AAC15 /* utility.c */,
 				BACDB6E014D0FEF9008AAC15 /* shader.f.glsl */,
 				BACDB6E114D0FEF9008AAC15 /* shader.v.glsl */,
-				BACDB6E514D0FF5F008AAC15 /* utility.h */,
 			);
 			name = Triangle;
 			sourceTree = "<group>";
@@ -135,6 +133,8 @@
 		BADE992A14D0DEDD00F2CA68 /* GLSandbox */ = {
 			isa = PBXGroup;
 			children = (
+				BACDB6EE14D111C6008AAC15 /* utility.h */,
+				BACDB6E614D10039008AAC15 /* utility.c */,
 				BA5312F614D0F152000B4734 /* sandbox.h */,
 				BA5312F714D0F152000B4734 /* sandbox.m */,
 				BADE993614D0DEDD00F2CA68 /* AppDelegate.h */,
