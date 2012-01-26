@@ -3,6 +3,9 @@
 
 #include "utility.h"
 
+int sandboxWidth;
+int sandboxHeight;
+
 GLboolean sandboxSetup(void);
 
 void sandboxRender(GLfloat time);

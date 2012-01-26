@@ -105,15 +105,28 @@ CVReturn displayCallback(CVDisplayLinkRef displayLink,
 }
 
 - (void)awakeFromNib
-{
+{ 
   [self createOpenGLView];
   [self createDisplayLink];
-
   [[[self view] openGLContext] makeCurrentContext];
-
+  
   if (sandboxSetup() != GL_TRUE) {
     NSLog(@"Fail.");
   }
+}
+
+- (void)applicationDidFinishLaunching:(NSNotification *)notification
+{
+  if (!sandboxWidth)
+    sandboxWidth = 500;
+  
+  if (!sandboxHeight)
+    sandboxHeight = 500;
+
+  CGFloat x = (window.screen.frame.size.width - sandboxWidth) / 2;
+  CGFloat y = (window.screen.frame.size.height - sandboxHeight) / 2;  
+  NSRect frame = NSMakeRect(x, y, sandboxWidth, sandboxHeight);
+  [[self window] setFrame:frame display:YES];
 }
 
 - (void)windowDidResize:(NSNotification *)notification
