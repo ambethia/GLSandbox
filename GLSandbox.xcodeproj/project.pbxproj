@@ -13,6 +13,8 @@
 		BADE993514D0DEDD00F2CA68 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BADE993314D0DEDD00F2CA68 /* Credits.rtf */; };
 		BADE993814D0DEDD00F2CA68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE993714D0DEDD00F2CA68 /* AppDelegate.m */; };
 		BADE993B14D0DEDD00F2CA68 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADE993914D0DEDD00F2CA68 /* MainMenu.xib */; };
+		BADE994214D0E06B00F2CA68 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE994114D0E06B00F2CA68 /* OpenGL.framework */; };
+		BADE994414D0E07300F2CA68 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE994314D0E07300F2CA68 /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +23,16 @@
 		BADE992714D0DEDD00F2CA68 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		BADE992814D0DEDD00F2CA68 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BADE992914D0DEDD00F2CA68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		BADE992C14D0DEDD00F2CA68 /* GLSandbox-Info.plist */ = {isa = PBXFileReference; path = "GLSandbox-Info.plist"; sourceTree = "<group>"; };
+		BADE992C14D0DEDD00F2CA68 /* GLSandbox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLSandbox-Info.plist"; sourceTree = "<group>"; };
 		BADE992E14D0DEDD00F2CA68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BADE993014D0DEDD00F2CA68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BADE993214D0DEDD00F2CA68 /* GLSandbox-Prefix.pch */ = {isa = PBXFileReference; path = "GLSandbox-Prefix.pch"; sourceTree = "<group>"; };
+		BADE993214D0DEDD00F2CA68 /* GLSandbox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLSandbox-Prefix.pch"; sourceTree = "<group>"; };
 		BADE993414D0DEDD00F2CA68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		BADE993614D0DEDD00F2CA68 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		BADE993614D0DEDD00F2CA68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BADE993714D0DEDD00F2CA68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BADE993A14D0DEDD00F2CA68 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BADE994114D0E06B00F2CA68 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		BADE994314D0E07300F2CA68 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BADE992514D0DEDD00F2CA68 /* Cocoa.framework in Frameworks */,
+				BADE994214D0E06B00F2CA68 /* OpenGL.framework in Frameworks */,
+				BADE994414D0E07300F2CA68 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				BADE992414D0DEDD00F2CA68 /* Cocoa.framework */,
+				BADE994114D0E06B00F2CA68 /* OpenGL.framework */,
+				BADE994314D0E07300F2CA68 /* CoreVideo.framework */,
 				BADE992614D0DEDD00F2CA68 /* Other Frameworks */,
 			);
 			name = Frameworks;
