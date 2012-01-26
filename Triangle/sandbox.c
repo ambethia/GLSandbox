@@ -41,9 +41,12 @@ GLboolean sandboxSetup()
 
   timeUniformLoc = glGetUniformLocation(program, "time");
   
-  GLuint durationUniformLoc = glGetUniformLocation(program, "duration");
+  GLuint vertDurationUniformLoc = glGetUniformLocation(program, "vertDuration");
+  GLuint fragDurationUniformLoc = glGetUniformLocation(program, "fragDuration");
+
   glUseProgram(program);
-  glUniform1f(durationUniformLoc, 5.0f);
+  glUniform1f(vertDurationUniformLoc, 5.0f);
+  glUniform1f(fragDurationUniformLoc, 10.0f);
   glUseProgram(0);
   
   GLuint vao;
