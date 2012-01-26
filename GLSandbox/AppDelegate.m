@@ -66,6 +66,7 @@ CVReturn displayCallback(CVDisplayLinkRef displayLink,
                                          pixelFormat:pixelFormat] autorelease]];
 
   [[[self window] contentView] addSubview:[self view]];
+  [[self window] setDelegate:self];
   [[self view] setAutoresizingMask:(NSViewHeightSizable | NSViewWidthSizable)];
 }
 
@@ -96,6 +97,13 @@ CVReturn displayCallback(CVDisplayLinkRef displayLink,
   [[[self view] openGLContext] flushBuffer];
 }
 
+- (void)reshape
+{
+  NSSize size = [[self window] frame].size;
+  [[[self view] openGLContext] makeCurrentContext];
+  glViewport(0, 0, size.width, size.height);
+}
+
 - (void)awakeFromNib
 {
   [self createOpenGLView];
@@ -106,6 +114,16 @@ CVReturn displayCallback(CVDisplayLinkRef displayLink,
   if (sandboxSetup() != GL_TRUE) {
     NSLog(@"Fail.");
   }
+}
+
+- (void)windowDidResize:(NSNotification *)notification
+{
+  [self reshape];
+}
+
+- (void)windowWillStartLiveResize:(NSNotification *)notification
+{
+  [self reshape];
 }
 
 - (void)dealloc
