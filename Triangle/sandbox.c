@@ -14,9 +14,12 @@ GLuint vertexBuffer;
 GLboolean sandboxSetup()
 {
   const GLfloat vertices[] = {
-    0.75f,  0.75f, 0.0f, 1.0f,
-    0.75f, -0.75f, 0.0f, 1.0f,
-    -0.75f, -0.75f, 0.0f, 1.0f,
+     0.0f,    0.5f, 0.0f, 1.0f,
+     0.5f, -0.366f, 0.0f, 1.0f,
+    -0.5f, -0.366f, 0.0f, 1.0f,
+     1.0f,    0.0f, 0.0f, 1.0f,
+     0.0f,    1.0f, 0.0f, 1.0f,
+     0.0f,    0.0f, 1.0f, 1.0f,
   };
   
   glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
@@ -31,7 +34,7 @@ GLboolean sandboxSetup()
   glDeleteShader(vertexShader);
   glDeleteShader(fragmentShader);
   
-  vertexBuffer = createBuffer(GL_ARRAY_BUFFER, sizeof(GLfloat) * 6 * 4, vertices, GL_STATIC_DRAW);
+  vertexBuffer = createBuffer(GL_ARRAY_BUFFER, sizeof(GLfloat) * 6 * 4, vertices, GL_STREAM_DRAW);
   if(!vertexBuffer)
     return GL_FALSE;
 
@@ -48,11 +51,16 @@ void sandboxRender(GLfloat time)
   
   glUseProgram(program);
   glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
+
   glEnableVertexAttribArray(0);
-  
+  glEnableVertexAttribArray(1);
+
   glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, (void*)0);
+  glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, 0, (void*)(sizeof(GLfloat) * 3 * 4));
+
   glDrawArrays(GL_TRIANGLES, 0, 3);
   
   glDisableVertexAttribArray(0);
+  glDisableVertexAttribArray(1);
   glUseProgram(0);
 }
