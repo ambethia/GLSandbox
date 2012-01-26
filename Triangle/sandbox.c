@@ -31,7 +31,7 @@ GLboolean sandboxSetup()
   glDeleteShader(vertexShader);
   glDeleteShader(fragmentShader);
   
-  vertexBuffer = createBuffer(GL_ARRAY_BUFFER, vertices, sizeof(vertices));
+  vertexBuffer = createBuffer(GL_ARRAY_BUFFER, sizeof(GLfloat) * 6 * 4, vertices, GL_STATIC_DRAW);
   if(!vertexBuffer)
     return GL_FALSE;
 

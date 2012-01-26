@@ -46,12 +46,12 @@ static void *file_contents(const char *filename, GLint *length)
   return buffer;
 }
 
-GLuint createBuffer(GLenum target, const void *data, GLsizei size)
+GLuint createBuffer(GLenum target, GLsizei size, const void *data, GLenum type)
 {
   GLuint buffer;
   glGenBuffers(1, &buffer);
   glBindBuffer(target, buffer);
-  glBufferData(target, size, data, GL_STATIC_DRAW);
+  glBufferData(target, size, data, type);
   glBindBuffer(target, 0);
   return buffer;
 }

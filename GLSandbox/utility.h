@@ -9,7 +9,7 @@
 #ifndef GLSandbox_utility_h
 #define GLSandbox_utility_h
 
-GLuint createBuffer(GLenum target, const void *data, GLsizei size);
+GLuint createBuffer(GLenum target, GLsizei size, const void *data, GLenum type);
 
 GLuint createShader(GLenum type, const char *filename);
 
