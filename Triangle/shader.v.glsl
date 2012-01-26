@@ -9,7 +9,6 @@ smooth out vec4 theColor;
 
 void main()
 {
-  vec4 totalOffset = vec4(offset.x, offset.y, 0.0, 0.0);
-  gl_Position = position + totalOffset;
+  gl_Position = position + vec4(offset, 0.0, 0.0);
   theColor = color;
 }
