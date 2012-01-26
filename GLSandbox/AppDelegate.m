@@ -91,7 +91,7 @@ CVReturn displayCallback(CVDisplayLinkRef displayLink,
 
   GLfloat timeValue = (GLfloat)(time.videoTime) / (GLfloat)(time.videoTimeScale);
 
-  renderForTime(timeValue);
+  sandboxRender(timeValue);
 
   [[[self view] openGLContext] flushBuffer];
 }
@@ -100,6 +100,12 @@ CVReturn displayCallback(CVDisplayLinkRef displayLink,
 {
   [self createOpenGLView];
   [self createDisplayLink];
+
+  [[[self view] openGLContext] makeCurrentContext];
+
+  if (sandboxSetup() != GL_TRUE) {
+    NSLog(@"Fail.");
+  }
 }
 
 - (void)dealloc

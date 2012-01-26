@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA5312F514D0F115000B4734 /* sandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5312F414D0F115000B4734 /* sandbox.m */; };
 		BA5312F814D0F152000B4734 /* sandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5312F714D0F152000B4734 /* sandbox.m */; };
+		BACDB6E214D0FEF9008AAC15 /* sandbox.c in Sources */ = {isa = PBXBuildFile; fileRef = BACDB6DF14D0FEF9008AAC15 /* sandbox.c */; };
+		BACDB6E314D0FEF9008AAC15 /* shader.f.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BACDB6E014D0FEF9008AAC15 /* shader.f.glsl */; };
+		BACDB6E414D0FEF9008AAC15 /* shader.v.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BACDB6E114D0FEF9008AAC15 /* shader.v.glsl */; };
+		BACDB6E714D10039008AAC15 /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = BACDB6E614D10039008AAC15 /* utility.c */; };
 		BADE992514D0DEDD00F2CA68 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE992414D0DEDD00F2CA68 /* Cocoa.framework */; };
 		BADE992F14D0DEDD00F2CA68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BADE992D14D0DEDD00F2CA68 /* InfoPlist.strings */; };
 		BADE993114D0DEDD00F2CA68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE993014D0DEDD00F2CA68 /* main.m */; };
@@ -28,9 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BA5312F414D0F115000B4734 /* sandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = sandbox.m; path = QuadDemo/sandbox.m; sourceTree = "<group>"; };
 		BA5312F614D0F152000B4734 /* sandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sandbox.h; sourceTree = "<group>"; };
 		BA5312F714D0F152000B4734 /* sandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sandbox.m; sourceTree = "<group>"; };
+		BACDB6DF14D0FEF9008AAC15 /* sandbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sandbox.c; path = Triangle/sandbox.c; sourceTree = "<group>"; };
+		BACDB6E014D0FEF9008AAC15 /* shader.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shader.f.glsl; path = Triangle/shader.f.glsl; sourceTree = "<group>"; };
+		BACDB6E114D0FEF9008AAC15 /* shader.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shader.v.glsl; path = Triangle/shader.v.glsl; sourceTree = "<group>"; };
+		BACDB6E514D0FF5F008AAC15 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utility.h; path = Triangle/utility.h; sourceTree = "<group>"; };
+		BACDB6E614D10039008AAC15 /* utility.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = utility.c; path = GLSandbox/utility.c; sourceTree = "<group>"; };
 		BADE992014D0DEDD00F2CA68 /* GLSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BADE992414D0DEDD00F2CA68 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BADE992714D0DEDD00F2CA68 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -46,7 +53,7 @@
 		BADE993A14D0DEDD00F2CA68 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		BADE994114D0E06B00F2CA68 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		BADE994314D0E07300F2CA68 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		BADE999C14D0EDC000F2CA68 /* QuadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADE999C14D0EDC000F2CA68 /* Triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,18 +80,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BA5312EF14D0EFC8000B4734 /* QuadDemo */ = {
+		BA5312EF14D0EFC8000B4734 /* Triangle */ = {
 			isa = PBXGroup;
 			children = (
-				BA5312F414D0F115000B4734 /* sandbox.m */,
+				BACDB6DF14D0FEF9008AAC15 /* sandbox.c */,
+				BACDB6E614D10039008AAC15 /* utility.c */,
+				BACDB6E014D0FEF9008AAC15 /* shader.f.glsl */,
+				BACDB6E114D0FEF9008AAC15 /* shader.v.glsl */,
+				BACDB6E514D0FF5F008AAC15 /* utility.h */,
 			);
-			name = QuadDemo;
+			name = Triangle;
 			sourceTree = "<group>";
 		};
 		BADE991514D0DEDD00F2CA68 = {
 			isa = PBXGroup;
 			children = (
-				BA5312EF14D0EFC8000B4734 /* QuadDemo */,
+				BA5312EF14D0EFC8000B4734 /* Triangle */,
 				BADE992A14D0DEDD00F2CA68 /* GLSandbox */,
 				BADE992314D0DEDD00F2CA68 /* Frameworks */,
 				BADE992114D0DEDD00F2CA68 /* Products */,
@@ -95,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				BADE992014D0DEDD00F2CA68 /* GLSandbox.app */,
-				BADE999C14D0EDC000F2CA68 /* QuadDemo.app */,
+				BADE999C14D0EDC000F2CA68 /* Triangle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,9 +177,9 @@
 			productReference = BADE992014D0DEDD00F2CA68 /* GLSandbox.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BADE998D14D0EDC000F2CA68 /* QuadDemo */ = {
+		BADE998D14D0EDC000F2CA68 /* Triangle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BADE999914D0EDC000F2CA68 /* Build configuration list for PBXNativeTarget "QuadDemo" */;
+			buildConfigurationList = BADE999914D0EDC000F2CA68 /* Build configuration list for PBXNativeTarget "Triangle" */;
 			buildPhases = (
 				BADE998E14D0EDC000F2CA68 /* Sources */,
 				BADE999114D0EDC000F2CA68 /* Frameworks */,
@@ -178,9 +189,9 @@
 			);
 			dependencies = (
 			);
-			name = QuadDemo;
+			name = Triangle;
 			productName = GLSandbox;
-			productReference = BADE999C14D0EDC000F2CA68 /* QuadDemo.app */;
+			productReference = BADE999C14D0EDC000F2CA68 /* Triangle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +215,7 @@
 			projectRoot = "";
 			targets = (
 				BADE991F14D0DEDD00F2CA68 /* GLSandbox */,
-				BADE998D14D0EDC000F2CA68 /* QuadDemo */,
+				BADE998D14D0EDC000F2CA68 /* Triangle */,
 			);
 		};
 /* End PBXProject section */
@@ -227,6 +238,8 @@
 				BADE999614D0EDC000F2CA68 /* InfoPlist.strings in Resources */,
 				BADE999714D0EDC000F2CA68 /* Credits.rtf in Resources */,
 				BADE999814D0EDC000F2CA68 /* MainMenu.xib in Resources */,
+				BACDB6E314D0FEF9008AAC15 /* shader.f.glsl in Resources */,
+				BACDB6E414D0FEF9008AAC15 /* shader.v.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +262,8 @@
 			files = (
 				BADE998F14D0EDC000F2CA68 /* main.m in Sources */,
 				BADE999014D0EDC000F2CA68 /* AppDelegate.m in Sources */,
-				BA5312F514D0F115000B4734 /* sandbox.m in Sources */,
+				BACDB6E214D0FEF9008AAC15 /* sandbox.c in Sources */,
+				BACDB6E714D10039008AAC15 /* utility.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +370,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GLSandbox/GLSandbox-Prefix.pch";
 				INFOPLIST_FILE = "GLSandbox/GLSandbox-Info.plist";
-				PRODUCT_NAME = QuadDemo;
+				PRODUCT_NAME = Triangle;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -367,7 +381,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GLSandbox/GLSandbox-Prefix.pch";
 				INFOPLIST_FILE = "GLSandbox/GLSandbox-Info.plist";
-				PRODUCT_NAME = QuadDemo;
+				PRODUCT_NAME = Triangle;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -393,7 +407,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BADE999914D0EDC000F2CA68 /* Build configuration list for PBXNativeTarget "QuadDemo" */ = {
+		BADE999914D0EDC000F2CA68 /* Build configuration list for PBXNativeTarget "Triangle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BADE999A14D0EDC000F2CA68 /* Debug */,
