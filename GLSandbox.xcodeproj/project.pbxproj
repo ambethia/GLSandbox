@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BADE992514D0DEDD00F2CA68 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE992414D0DEDD00F2CA68 /* Cocoa.framework */; };
+		BADE992F14D0DEDD00F2CA68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BADE992D14D0DEDD00F2CA68 /* InfoPlist.strings */; };
+		BADE993114D0DEDD00F2CA68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE993014D0DEDD00F2CA68 /* main.m */; };
+		BADE993514D0DEDD00F2CA68 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BADE993314D0DEDD00F2CA68 /* Credits.rtf */; };
+		BADE993814D0DEDD00F2CA68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE993714D0DEDD00F2CA68 /* AppDelegate.m */; };
+		BADE993B14D0DEDD00F2CA68 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADE993914D0DEDD00F2CA68 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BADE992014D0DEDD00F2CA68 /* GLSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADE992414D0DEDD00F2CA68 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BADE992714D0DEDD00F2CA68 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BADE992814D0DEDD00F2CA68 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BADE992914D0DEDD00F2CA68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BADE992C14D0DEDD00F2CA68 /* GLSandbox-Info.plist */ = {isa = PBXFileReference; path = "GLSandbox-Info.plist"; sourceTree = "<group>"; };
+		BADE992E14D0DEDD00F2CA68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BADE993014D0DEDD00F2CA68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BADE993214D0DEDD00F2CA68 /* GLSandbox-Prefix.pch */ = {isa = PBXFileReference; path = "GLSandbox-Prefix.pch"; sourceTree = "<group>"; };
+		BADE993414D0DEDD00F2CA68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BADE993614D0DEDD00F2CA68 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		BADE993714D0DEDD00F2CA68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BADE993A14D0DEDD00F2CA68 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BADE991D14D0DEDD00F2CA68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADE992514D0DEDD00F2CA68 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BADE991514D0DEDD00F2CA68 = {
+			isa = PBXGroup;
+			children = (
+				BADE992A14D0DEDD00F2CA68 /* GLSandbox */,
+				BADE992314D0DEDD00F2CA68 /* Frameworks */,
+				BADE992114D0DEDD00F2CA68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BADE992114D0DEDD00F2CA68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BADE992014D0DEDD00F2CA68 /* GLSandbox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BADE992314D0DEDD00F2CA68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BADE992414D0DEDD00F2CA68 /* Cocoa.framework */,
+				BADE992614D0DEDD00F2CA68 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BADE992614D0DEDD00F2CA68 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BADE992714D0DEDD00F2CA68 /* AppKit.framework */,
+				BADE992814D0DEDD00F2CA68 /* CoreData.framework */,
+				BADE992914D0DEDD00F2CA68 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BADE992A14D0DEDD00F2CA68 /* GLSandbox */ = {
+			isa = PBXGroup;
+			children = (
+				BADE993614D0DEDD00F2CA68 /* AppDelegate.h */,
+				BADE993714D0DEDD00F2CA68 /* AppDelegate.m */,
+				BADE993914D0DEDD00F2CA68 /* MainMenu.xib */,
+				BADE992B14D0DEDD00F2CA68 /* Supporting Files */,
+			);
+			path = GLSandbox;
+			sourceTree = "<group>";
+		};
+		BADE992B14D0DEDD00F2CA68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BADE992C14D0DEDD00F2CA68 /* GLSandbox-Info.plist */,
+				BADE992D14D0DEDD00F2CA68 /* InfoPlist.strings */,
+				BADE993014D0DEDD00F2CA68 /* main.m */,
+				BADE993214D0DEDD00F2CA68 /* GLSandbox-Prefix.pch */,
+				BADE993314D0DEDD00F2CA68 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BADE991F14D0DEDD00F2CA68 /* GLSandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BADE993E14D0DEDD00F2CA68 /* Build configuration list for PBXNativeTarget "GLSandbox" */;
+			buildPhases = (
+				BADE991C14D0DEDD00F2CA68 /* Sources */,
+				BADE991D14D0DEDD00F2CA68 /* Frameworks */,
+				BADE991E14D0DEDD00F2CA68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLSandbox;
+			productName = GLSandbox;
+			productReference = BADE992014D0DEDD00F2CA68 /* GLSandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BADE991714D0DEDD00F2CA68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = BADE991A14D0DEDD00F2CA68 /* Build configuration list for PBXProject "GLSandbox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BADE991514D0DEDD00F2CA68;
+			productRefGroup = BADE992114D0DEDD00F2CA68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BADE991F14D0DEDD00F2CA68 /* GLSandbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BADE991E14D0DEDD00F2CA68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADE992F14D0DEDD00F2CA68 /* InfoPlist.strings in Resources */,
+				BADE993514D0DEDD00F2CA68 /* Credits.rtf in Resources */,
+				BADE993B14D0DEDD00F2CA68 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BADE991C14D0DEDD00F2CA68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADE993114D0DEDD00F2CA68 /* main.m in Sources */,
+				BADE993814D0DEDD00F2CA68 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BADE992D14D0DEDD00F2CA68 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BADE992E14D0DEDD00F2CA68 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BADE993314D0DEDD00F2CA68 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BADE993414D0DEDD00F2CA68 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BADE993914D0DEDD00F2CA68 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BADE993A14D0DEDD00F2CA68 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BADE993C14D0DEDD00F2CA68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BADE993D14D0DEDD00F2CA68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BADE993F14D0DEDD00F2CA68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLSandbox/GLSandbox-Prefix.pch";
+				INFOPLIST_FILE = "GLSandbox/GLSandbox-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BADE994014D0DEDD00F2CA68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLSandbox/GLSandbox-Prefix.pch";
+				INFOPLIST_FILE = "GLSandbox/GLSandbox-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BADE991A14D0DEDD00F2CA68 /* Build configuration list for PBXProject "GLSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BADE993C14D0DEDD00F2CA68 /* Debug */,
+				BADE993D14D0DEDD00F2CA68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BADE993E14D0DEDD00F2CA68 /* Build configuration list for PBXNativeTarget "GLSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BADE993F14D0DEDD00F2CA68 /* Debug */,
+				BADE994014D0DEDD00F2CA68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BADE991714D0DEDD00F2CA68 /* Project object */;
+}
