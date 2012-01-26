@@ -96,14 +96,17 @@ GLuint createShader(GLenum eShaderType  , const char *filename)
 // createProgram(4, GL_VERTEX_SHADER, "vertex.glsl", GL_FRAGMENT_SHADER, "fragment.glsl");
 GLuint createProgram(int numArgs, ...)
 {
-  GLint status;
-  GLuint program = glCreateProgram();
-  va_list argp;
   int numShaders = numArgs / 2;
+  int i;
+  GLint status;
+  GLuint program;
   GLuint shaders[numShaders];
+  va_list argp;
 
   va_start(argp, numArgs);
-  int i;
+
+  program = glCreateProgram();
+  
   for (i = 0; i < numShaders; i++) {
     GLenum type = va_arg(argp, GLenum);
     const char* filename = va_arg(argp, const char*);
@@ -125,7 +128,6 @@ GLuint createProgram(int numArgs, ...)
     
     return GL_FALSE;
   } else {
-    int i;
     for (i = 0; i < numShaders; i++) {
       glDeleteShader((GLuint)shaders[i]);
     }
