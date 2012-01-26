@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#include "sandbox.h"
+
 @interface AppDelegate ()
 
 - (void)createOpenGLView;
@@ -87,8 +89,9 @@ CVReturn displayCallback(CVDisplayLinkRef displayLink,
 {
   [[[self view] openGLContext] makeCurrentContext];
 
-  glClearColor(0.2, 0.2, 0.2, 1.0);
-  glClear(GL_COLOR_BUFFER_BIT);
+  GLfloat timeValue = (GLfloat)(time.videoTime) / (GLfloat)(time.videoTimeScale);
+
+  renderForTime(timeValue);
 
   [[[self view] openGLContext] flushBuffer];
 }
