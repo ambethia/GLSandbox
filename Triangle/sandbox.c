@@ -10,7 +10,7 @@
 #include <string.h>
 #include "sandbox.h"
 
-GLuint program, vertexBuffer, offsetLocation;
+GLuint program, vertexBuffer, timeUniformLoc;
 
 const GLfloat vertices[] = {
   0.0f,    0.3f, 0.0f, 1.0f,
@@ -20,16 +20,6 @@ const GLfloat vertices[] = {
   0.0f,    1.0f, 0.0f, 1.0f,
   0.0f,    0.0f, 1.0f, 1.0f,
 };
-
-static void adjustOffsets(float *x, float *y, GLfloat time)
-{
-  const float duration = 5.0f;
-  const float scale = 3.14159f * 2.0f / duration;
-  const float position = fmodf(time, duration);
-
-  *x = cosf(position * scale) * 0.5f;
-  *y = sinf(position * scale) * 0.5f;
-}
 
 GLboolean sandboxSetup()
 {
@@ -49,7 +39,12 @@ GLboolean sandboxSetup()
   if(!vertexBuffer)
     return GL_FALSE;
 
-  offsetLocation = glGetUniformLocation(program, "offset");
+  timeUniformLoc = glGetUniformLocation(program, "time");
+  
+  GLuint durationUniformLoc = glGetUniformLocation(program, "duration");
+  glUseProgram(program);
+  glUniform1f(durationUniformLoc, 5.0f);
+  glUseProgram(0);
   
   GLuint vao;
   glGenVertexArrays(1, &vao);
@@ -60,14 +55,11 @@ GLboolean sandboxSetup()
 
 void sandboxRender(GLfloat time)
 {
-  float x = 0.0f, y = 0.0f;
-  adjustOffsets(&x, &y, time);
-
   glClear(GL_COLOR_BUFFER_BIT);
   
   glUseProgram(program);
 
-  glUniform2f(offsetLocation, x, y);
+  glUniform1f(timeUniformLoc, time);
   
   glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
 
