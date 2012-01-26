@@ -7,7 +7,6 @@
 //
 
 #include "sandbox.h"
-#include "utility.h"
 
 GLuint program;
 GLuint vertexBuffer;
