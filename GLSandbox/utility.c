@@ -92,17 +92,24 @@ GLuint createShader(GLenum eShaderType  , const char *filename)
   return shader;
 }
 
-// createProgram(1, shader)
-// createProgram(2, shader1, shader2)
-GLuint createProgram(int n, ...)
+// createProgram(2, GL_VERTEX_SHADER, "vertex.glsl");
+// createProgram(4, GL_VERTEX_SHADER, "vertex.glsl", GL_FRAGMENT_SHADER, "fragment.glsl");
+GLuint createProgram(int numArgs, ...)
 {
   GLint status;
   GLuint program = glCreateProgram();
   va_list argp;
-  
-  va_start(argp, n);
-  for (; n; n--)
-    glAttachShader(program, va_arg(argp, GLuint));
+  int numShaders = numArgs / 2;
+  GLuint shaders[numShaders];
+
+  va_start(argp, numArgs);
+  int i;
+  for (i = 0; i < numShaders; i++) {
+    GLenum type = va_arg(argp, GLenum);
+    const char* filename = va_arg(argp, const char*);
+    shaders[i] = createShader(type, filename);
+    glAttachShader(program, shaders[i]);
+  }
   va_end(argp);
   
   glLinkProgram(program);
@@ -117,6 +124,12 @@ GLuint createProgram(int n, ...)
     free(strInfoLog);
     
     return GL_FALSE;
+  } else {
+    int i;
+    for (i = 0; i < numShaders; i++) {
+      glDeleteShader((GLuint)shaders[i]);
+    }
   }
+  
   return program;
 }
