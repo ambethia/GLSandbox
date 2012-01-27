@@ -15,15 +15,23 @@ GLboolean sandboxSetup(void)
     return GL_FALSE;
 
   offsetUniLoc = glGetUniformLocation(program, "offset");
-
-  GLuint frustumScaleUniLoc = glGetUniformLocation(program, "frustumScale");
-  GLuint zNearUniLoc = glGetUniformLocation(program, "zNear");
-  GLuint zFarUniLoc = glGetUniformLocation(program, "zFar");
-
+  GLuint perspectiveMatrixUniLoc = glGetUniformLocation(program, "perspectiveMatrix");
+  
+  float frustumScale = 1.0f;
+  float zNear = 0.5f;
+  float zFar = 3.0f;
+  
+  float matrix[16];
+  memset(matrix, 0, sizeof(float) * 16);
+  
+  matrix[0] = frustumScale;
+  matrix[5] = frustumScale;
+  matrix[10] = (zFar + zNear) / (zNear - zFar);
+  matrix[14] = (2 * zFar * zNear) / (zNear - zFar);
+  matrix[11] = -1.0f;
+  
   glUseProgram(program);
-  glUniform1f(frustumScaleUniLoc, 1.0f);
-  glUniform1f(zNearUniLoc, 1.0f);
-  glUniform1f(zFarUniLoc, 3.0f);
+  glUniformMatrix4fv(perspectiveMatrixUniLoc, 1, GL_FALSE, matrix);
   glUseProgram(0);
 
   vertexBufferObject = createBuffer(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STREAM_DRAW);
