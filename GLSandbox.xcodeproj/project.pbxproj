@@ -18,7 +18,7 @@
 		BA4AE49314D1B87B00151F63 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADE993914D0DEDD00F2CA68 /* MainMenu.xib */; };
 		BA4AE49F14D1B92800151F63 /* sandbox.c in Sources */ = {isa = PBXBuildFile; fileRef = BA4AE49E14D1B92800151F63 /* sandbox.c */; };
 		BA4AE4A114D1B94C00151F63 /* sandbox.c in Sources */ = {isa = PBXBuildFile; fileRef = BA4AE49E14D1B92800151F63 /* sandbox.c */; };
-		BA5312F814D0F152000B4734 /* sandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5312F714D0F152000B4734 /* sandbox.m */; };
+		BA5312F814D0F152000B4734 /* sandbox.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5312F714D0F152000B4734 /* sandbox.c */; };
 		BAA74F2414D1EE8300B9F697 /* shader.f.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BAA74F2214D1EE8300B9F697 /* shader.f.glsl */; };
 		BAA74F2514D1EE8300B9F697 /* shader.v.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BAA74F2314D1EE8300B9F697 /* shader.v.glsl */; };
 		BACDB6E214D0FEF9008AAC15 /* sandbox.c in Sources */ = {isa = PBXBuildFile; fileRef = BACDB6DF14D0FEF9008AAC15 /* sandbox.c */; };
@@ -47,7 +47,7 @@
 		BA4AE49914D1B87B00151F63 /* Cube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4AE49E14D1B92800151F63 /* sandbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sandbox.c; sourceTree = "<group>"; };
 		BA5312F614D0F152000B4734 /* sandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sandbox.h; sourceTree = "<group>"; };
-		BA5312F714D0F152000B4734 /* sandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sandbox.m; sourceTree = "<group>"; };
+		BA5312F714D0F152000B4734 /* sandbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sandbox.c; sourceTree = "<group>"; };
 		BA93777814D1BD9D0091B521 /* vertices.h */ = {isa = PBXFileReference; fileEncoding = 4; path = vertices.h; sourceTree = "<group>"; };
 		BAA74F2214D1EE8300B9F697 /* shader.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shader.f.glsl; sourceTree = "<group>"; };
 		BAA74F2314D1EE8300B9F697 /* shader.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shader.v.glsl; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 				BACDB6EE14D111C6008AAC15 /* utility.h */,
 				BACDB6E614D10039008AAC15 /* utility.c */,
 				BA5312F614D0F152000B4734 /* sandbox.h */,
-				BA5312F714D0F152000B4734 /* sandbox.m */,
+				BA5312F714D0F152000B4734 /* sandbox.c */,
 				BADE993614D0DEDD00F2CA68 /* AppDelegate.h */,
 				BADE993714D0DEDD00F2CA68 /* AppDelegate.m */,
 				BADE993914D0DEDD00F2CA68 /* MainMenu.xib */,
@@ -334,7 +334,7 @@
 			files = (
 				BADE993114D0DEDD00F2CA68 /* main.m in Sources */,
 				BADE993814D0DEDD00F2CA68 /* AppDelegate.m in Sources */,
-				BA5312F814D0F152000B4734 /* sandbox.m in Sources */,
+				BA5312F814D0F152000B4734 /* sandbox.c in Sources */,
 				BA4AE49F14D1B92800151F63 /* sandbox.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
