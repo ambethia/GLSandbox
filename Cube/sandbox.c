@@ -1,7 +1,11 @@
 #include "sandbox.h"
 #include "vertices.h"
 
-GLuint program, offsetUniLoc;
+GLuint program, offsetUniLoc, perspectiveMatrixUniLoc;
+
+GLfloat frustumScale = 1.0f;
+
+float perspectiveMatrix[16];
 
 GLuint vertexBufferObject;
 GLuint vertexArrayObject;
@@ -15,23 +19,21 @@ GLboolean sandboxSetup(void)
     return GL_FALSE;
 
   offsetUniLoc = glGetUniformLocation(program, "offset");
-  GLuint perspectiveMatrixUniLoc = glGetUniformLocation(program, "perspectiveMatrix");
+  perspectiveMatrixUniLoc = glGetUniformLocation(program, "perspectiveMatrix");
   
-  float frustumScale = 1.0f;
+  memset(perspectiveMatrix, 0, sizeof(float) * 16);
+  
   float zNear = 0.5f;
   float zFar = 3.0f;
   
-  float matrix[16];
-  memset(matrix, 0, sizeof(float) * 16);
-  
-  matrix[0] = frustumScale;
-  matrix[5] = frustumScale;
-  matrix[10] = (zFar + zNear) / (zNear - zFar);
-  matrix[14] = (2 * zFar * zNear) / (zNear - zFar);
-  matrix[11] = -1.0f;
+  perspectiveMatrix[0] = frustumScale;
+  perspectiveMatrix[5] = frustumScale;
+  perspectiveMatrix[10] = (zFar + zNear) / (zNear - zFar);
+  perspectiveMatrix[14] = (2 * zFar * zNear) / (zNear - zFar);
+  perspectiveMatrix[11] = -1.0f;
   
   glUseProgram(program);
-  glUniformMatrix4fv(perspectiveMatrixUniLoc, 1, GL_FALSE, matrix);
+  glUniformMatrix4fv(perspectiveMatrixUniLoc, 1, GL_FALSE, perspectiveMatrix);
   glUseProgram(0);
 
   vertexBufferObject = createBuffer(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STREAM_DRAW);
@@ -73,3 +75,16 @@ void sandboxRender(GLfloat time)
 	
   glUseProgram(0);
 }
+
+void sandboxReshape(int w, int h)
+{
+  perspectiveMatrix[0] = frustumScale / (w / (float)h);
+  perspectiveMatrix[5] = frustumScale;
+
+  glUseProgram(program);
+  glUniformMatrix4fv(perspectiveMatrixUniLoc, 1, GL_FALSE, perspectiveMatrix);
+  glUseProgram(0);
+
+  glViewport(0, 0, (GLsizei) w, (GLsizei) h);
+}
+

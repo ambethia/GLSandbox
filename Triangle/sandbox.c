@@ -70,3 +70,12 @@ void sandboxRender(GLfloat time)
   glDisableVertexAttribArray(1);
   glUseProgram(0);
 }
+
+void sandboxReshape(int w, int h)
+{
+  if(w < h)
+    glViewport(0, 0, (GLsizei) w, (GLsizei) w);
+  else
+    glViewport(0, 0, (GLsizei) h, (GLsizei) h);  
+}
+

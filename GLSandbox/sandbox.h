@@ -9,3 +9,5 @@ int sandboxHeight;
 GLboolean sandboxSetup(void);
 
 void sandboxRender(GLfloat time);
+
+void sandboxReshape(int w, int h);
