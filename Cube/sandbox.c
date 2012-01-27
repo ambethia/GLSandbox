@@ -16,6 +16,16 @@ GLboolean sandboxSetup(void)
 
   offsetUniLoc = glGetUniformLocation(program, "offset");
 
+  GLuint frustumScaleUniLoc = glGetUniformLocation(program, "frustumScale");
+  GLuint zNearUniLoc = glGetUniformLocation(program, "zNear");
+  GLuint zFarUniLoc = glGetUniformLocation(program, "zFar");
+
+  glUseProgram(program);
+  glUniform1f(frustumScaleUniLoc, 1.0f);
+  glUniform1f(zNearUniLoc, 1.0f);
+  glUniform1f(zFarUniLoc, 3.0f);
+  glUseProgram(0);
+
   vertexBufferObject = createBuffer(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STREAM_DRAW);
   if(!vertexBufferObject)
     return GL_FALSE;
@@ -36,7 +46,7 @@ void sandboxRender(GLfloat time)
 
   glUseProgram(program);
   
-	glUniform2f(offsetUniLoc, 0.5f, 0.25f);
+	glUniform2f(offsetUniLoc, 0.5f, 0.5f);
   
 	size_t colorData = sizeof(vertices) / 2;
 
