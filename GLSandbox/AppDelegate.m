@@ -101,7 +101,7 @@ CVReturn displayCallback(CVDisplayLinkRef displayLink,
 {
   NSSize size = [[self window] frame].size;
   [[[self view] openGLContext] makeCurrentContext];
-  glViewport(0, 0, size.width, size.height);
+  sandboxReshape(size.width, size.height);
 }
 
 - (void)awakeFromNib

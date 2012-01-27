@@ -24,17 +24,12 @@ const GLfloat vertices[] = {
 GLboolean sandboxSetup()
 {
   glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
-  
-  GLuint vertexShader = createShader(GL_VERTEX_SHADER, "shader.v.glsl");
-  GLuint fragmentShader = createShader(GL_FRAGMENT_SHADER, "shader.f.glsl");
-  
-  program = createProgram(2, vertexShader, fragmentShader);
+
+  program = createProgram(4, GL_VERTEX_SHADER,   "shader.v.glsl",
+                             GL_FRAGMENT_SHADER, "shader.f.glsl");
   if(!program)
     return GL_FALSE;
-  
-  glDeleteShader(vertexShader);
-  glDeleteShader(fragmentShader);
-  
+
   vertexBuffer = createBuffer(GL_ARRAY_BUFFER, sizeof(GLfloat) * 6 * 4, vertices, GL_STREAM_DRAW);
   if(!vertexBuffer)
     return GL_FALSE;
@@ -78,3 +73,12 @@ void sandboxRender(GLfloat time)
   glDisableVertexAttribArray(1);
   glUseProgram(0);
 }
+
+void sandboxReshape(int w, int h)
+{
+  if(w < h)
+    glViewport(0, 0, (GLsizei) w, (GLsizei) w);
+  else
+    glViewport(0, 0, (GLsizei) h, (GLsizei) h);  
+}
+
