@@ -54,9 +54,15 @@ void sandboxRender(GLfloat time)
 {
   glClear(GL_COLOR_BUFFER_BIT);
 
+
   glUseProgram(program);
-  
-	glUniform2f(offsetUniLoc, 0.5f, 0.5f);
+
+  //  frustumScale = sin(time) * cos(time) * 3;
+  //  perspectiveMatrix[0] = frustumScale;
+  //  perspectiveMatrix[5] = frustumScale;
+  //  glUniformMatrix4fv(perspectiveMatrixUniLoc, 1, GL_FALSE, perspectiveMatrix);
+
+	glUniform2f(offsetUniLoc, cos(time), sin(time));
   
 	size_t colorData = sizeof(vertices) / 2;
 

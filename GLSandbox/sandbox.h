@@ -1,7 +1,9 @@
 #import <OpenGL/OpenGL.h>
 #import <OpenGL/gl3.h>
-#import <string.h>
-#import "utility.h"
+
+#include <math.h>
+#include <string.h>
+#include "utility.h"
 
 int sandboxWidth;
 int sandboxHeight;
