@@ -48,9 +48,9 @@
 		BA4AE49E14D1B92800151F63 /* sandbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sandbox.c; sourceTree = "<group>"; };
 		BA5312F614D0F152000B4734 /* sandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sandbox.h; sourceTree = "<group>"; };
 		BA5312F714D0F152000B4734 /* sandbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sandbox.c; sourceTree = "<group>"; };
-		BA93777814D1BD9D0091B521 /* vertices.h */ = {isa = PBXFileReference; fileEncoding = 4; path = vertices.h; sourceTree = "<group>"; };
-		BAA74F2214D1EE8300B9F697 /* shader.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shader.f.glsl; sourceTree = "<group>"; };
-		BAA74F2314D1EE8300B9F697 /* shader.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shader.v.glsl; sourceTree = "<group>"; };
+		BA93777814D1BD9D0091B521 /* vertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vertices.h; sourceTree = "<group>"; };
+		BAA74F2214D1EE8300B9F697 /* shader.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shader.f.glsl; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		BAA74F2314D1EE8300B9F697 /* shader.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shader.v.glsl; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
 		BACDB6DF14D0FEF9008AAC15 /* sandbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sandbox.c; path = Triangle/sandbox.c; sourceTree = "<group>"; };
 		BACDB6E014D0FEF9008AAC15 /* shader.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shader.f.glsl; path = Triangle/shader.f.glsl; sourceTree = "<group>"; };
 		BACDB6E114D0FEF9008AAC15 /* shader.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shader.v.glsl; path = Triangle/shader.v.glsl; sourceTree = "<group>"; };
