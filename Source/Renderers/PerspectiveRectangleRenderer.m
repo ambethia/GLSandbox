@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Jason L Perry. All rights reserved.
 //
 
-#import "Renderers.h"
+#import "GLRenderer.h"
 
 @implementation PerspectiveRectangleRenderer
 

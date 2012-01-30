@@ -50,7 +50,6 @@
 		BAF92E5A14D6597B00994374 /* TriangleRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleRenderer.m; sourceTree = "<group>"; };
 		BAF92E5B14D6597B00994374 /* utility.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utility.c; sourceTree = "<group>"; };
 		BAF92E5C14D6597B00994374 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
-		BAF92E6D14D6647800994374 /* Renderers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderers.h; sourceTree = "<group>"; };
 		BAF92E6F14D6664A00994374 /* perspective_rectangle.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perspective_rectangle.f.glsl; sourceTree = "<group>"; };
 		BAF92E7014D6664A00994374 /* perspective_rectangle.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perspective_rectangle.v.glsl; sourceTree = "<group>"; };
 		BAF92E7114D6664A00994374 /* triangle.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = triangle.f.glsl; sourceTree = "<group>"; };
@@ -141,7 +140,6 @@
 				BAF92E5414D6597B00994374 /* GLRenderer.m */,
 				BAF92E5514D6597B00994374 /* GLView.h */,
 				BAF92E5614D6597B00994374 /* GLView.m */,
-				BAF92E6D14D6647800994374 /* Renderers.h */,
 				BAF92E5714D6597B00994374 /* Renderers */,
 				BAF92E5B14D6597B00994374 /* utility.c */,
 				BAF92E5C14D6597B00994374 /* utility.h */,

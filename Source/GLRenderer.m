@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Jason L Perry. All rights reserved.
 //
 
-#import "Renderers.h"
+#import "GLRenderer.h"
 
 @interface GLRenderer (PrivateMethods)
 - (void) setup;

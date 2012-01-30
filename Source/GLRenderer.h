@@ -19,3 +19,8 @@
 - (void) renderWithTime:(GLfloat)time;
 
 @end
+
+#define CURRENT_RENDERER PerspectiveRectangleRenderer
+
+@interface PerspectiveRectangleRenderer : GLRenderer @end
+@interface TriangleRenderer : GLRenderer @end

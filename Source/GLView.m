@@ -7,7 +7,7 @@
 //
 
 #import "GLView.h"
-#import "Renderers.h"
+#import "GLRenderer.h"
 
 @interface GLView (PrivateMethods)
 - (void) initGL;
