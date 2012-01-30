@@ -7,24 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA4AE48814D1B87B00151F63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE993014D0DEDD00F2CA68 /* main.m */; };
-		BA4AE48914D1B87B00151F63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE993714D0DEDD00F2CA68 /* AppDelegate.m */; };
-		BA4AE48B14D1B87B00151F63 /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = BACDB6E614D10039008AAC15 /* utility.c */; };
-		BA4AE48D14D1B87B00151F63 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE992414D0DEDD00F2CA68 /* Cocoa.framework */; };
-		BA4AE48E14D1B87B00151F63 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE994114D0E06B00F2CA68 /* OpenGL.framework */; };
-		BA4AE48F14D1B87B00151F63 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE994314D0E07300F2CA68 /* CoreVideo.framework */; };
-		BA4AE49114D1B87B00151F63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BADE992D14D0DEDD00F2CA68 /* InfoPlist.strings */; };
-		BA4AE49214D1B87B00151F63 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BADE993314D0DEDD00F2CA68 /* Credits.rtf */; };
-		BA4AE49314D1B87B00151F63 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADE993914D0DEDD00F2CA68 /* MainMenu.xib */; };
-		BA4AE49F14D1B92800151F63 /* sandbox.c in Sources */ = {isa = PBXBuildFile; fileRef = BA4AE49E14D1B92800151F63 /* sandbox.c */; };
-		BA4AE4A114D1B94C00151F63 /* sandbox.c in Sources */ = {isa = PBXBuildFile; fileRef = BA4AE49E14D1B92800151F63 /* sandbox.c */; };
-		BA5312F814D0F152000B4734 /* sandbox.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5312F714D0F152000B4734 /* sandbox.c */; };
-		BAA74F2414D1EE8300B9F697 /* shader.f.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BAA74F2214D1EE8300B9F697 /* shader.f.glsl */; };
-		BAA74F2514D1EE8300B9F697 /* shader.v.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BAA74F2314D1EE8300B9F697 /* shader.v.glsl */; };
-		BACDB6E214D0FEF9008AAC15 /* sandbox.c in Sources */ = {isa = PBXBuildFile; fileRef = BACDB6DF14D0FEF9008AAC15 /* sandbox.c */; };
-		BACDB6E314D0FEF9008AAC15 /* shader.f.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BACDB6E014D0FEF9008AAC15 /* shader.f.glsl */; };
-		BACDB6E414D0FEF9008AAC15 /* shader.v.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BACDB6E114D0FEF9008AAC15 /* shader.v.glsl */; };
-		BACDB6E714D10039008AAC15 /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = BACDB6E614D10039008AAC15 /* utility.c */; };
 		BADE992514D0DEDD00F2CA68 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE992414D0DEDD00F2CA68 /* Cocoa.framework */; };
 		BADE992F14D0DEDD00F2CA68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BADE992D14D0DEDD00F2CA68 /* InfoPlist.strings */; };
 		BADE993114D0DEDD00F2CA68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE993014D0DEDD00F2CA68 /* main.m */; };
@@ -33,29 +15,18 @@
 		BADE993B14D0DEDD00F2CA68 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADE993914D0DEDD00F2CA68 /* MainMenu.xib */; };
 		BADE994214D0E06B00F2CA68 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE994114D0E06B00F2CA68 /* OpenGL.framework */; };
 		BADE994414D0E07300F2CA68 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE994314D0E07300F2CA68 /* CoreVideo.framework */; };
-		BADE998F14D0EDC000F2CA68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE993014D0DEDD00F2CA68 /* main.m */; };
-		BADE999014D0EDC000F2CA68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE993714D0DEDD00F2CA68 /* AppDelegate.m */; };
-		BADE999214D0EDC000F2CA68 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE992414D0DEDD00F2CA68 /* Cocoa.framework */; };
-		BADE999314D0EDC000F2CA68 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE994114D0E06B00F2CA68 /* OpenGL.framework */; };
-		BADE999414D0EDC000F2CA68 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE994314D0E07300F2CA68 /* CoreVideo.framework */; };
-		BADE999614D0EDC000F2CA68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BADE992D14D0DEDD00F2CA68 /* InfoPlist.strings */; };
-		BADE999714D0EDC000F2CA68 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BADE993314D0DEDD00F2CA68 /* Credits.rtf */; };
-		BADE999814D0EDC000F2CA68 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADE993914D0DEDD00F2CA68 /* MainMenu.xib */; };
+		BAF92E5D14D6597B00994374 /* GLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF92E5414D6597B00994374 /* GLRenderer.m */; };
+		BAF92E5E14D6597B00994374 /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF92E5614D6597B00994374 /* GLView.m */; };
+		BAF92E5F14D6597B00994374 /* PerspectiveRectangleRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF92E5814D6597B00994374 /* PerspectiveRectangleRenderer.m */; };
+		BAF92E6014D6597B00994374 /* TriangleRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF92E5A14D6597B00994374 /* TriangleRenderer.m */; };
+		BAF92E6114D6597B00994374 /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = BAF92E5B14D6597B00994374 /* utility.c */; };
+		BAF92E7314D6664A00994374 /* perspective_rectangle.f.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BAF92E6F14D6664A00994374 /* perspective_rectangle.f.glsl */; };
+		BAF92E7414D6664A00994374 /* perspective_rectangle.v.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BAF92E7014D6664A00994374 /* perspective_rectangle.v.glsl */; };
+		BAF92E7514D6664A00994374 /* triangle.f.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BAF92E7114D6664A00994374 /* triangle.f.glsl */; };
+		BAF92E7614D6664A00994374 /* triangle.v.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BAF92E7214D6664A00994374 /* triangle.v.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BA4AE49914D1B87B00151F63 /* Cube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cube.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA4AE49E14D1B92800151F63 /* sandbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sandbox.c; sourceTree = "<group>"; };
-		BA5312F614D0F152000B4734 /* sandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sandbox.h; sourceTree = "<group>"; };
-		BA5312F714D0F152000B4734 /* sandbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sandbox.c; sourceTree = "<group>"; };
-		BA93777814D1BD9D0091B521 /* vertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vertices.h; sourceTree = "<group>"; };
-		BAA74F2214D1EE8300B9F697 /* shader.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shader.f.glsl; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
-		BAA74F2314D1EE8300B9F697 /* shader.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shader.v.glsl; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
-		BACDB6DF14D0FEF9008AAC15 /* sandbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sandbox.c; path = Triangle/sandbox.c; sourceTree = "<group>"; };
-		BACDB6E014D0FEF9008AAC15 /* shader.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shader.f.glsl; path = Triangle/shader.f.glsl; sourceTree = "<group>"; };
-		BACDB6E114D0FEF9008AAC15 /* shader.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shader.v.glsl; path = Triangle/shader.v.glsl; sourceTree = "<group>"; };
-		BACDB6E614D10039008AAC15 /* utility.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utility.c; sourceTree = "<group>"; };
-		BACDB6EE14D111C6008AAC15 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
 		BADE992014D0DEDD00F2CA68 /* GLSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BADE992414D0DEDD00F2CA68 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BADE992714D0DEDD00F2CA68 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -71,20 +42,22 @@
 		BADE993A14D0DEDD00F2CA68 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		BADE994114D0E06B00F2CA68 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		BADE994314D0E07300F2CA68 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		BADE999C14D0EDC000F2CA68 /* Triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF92E5314D6597B00994374 /* GLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRenderer.h; sourceTree = "<group>"; };
+		BAF92E5414D6597B00994374 /* GLRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLRenderer.m; sourceTree = "<group>"; };
+		BAF92E5514D6597B00994374 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		BAF92E5614D6597B00994374 /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
+		BAF92E5814D6597B00994374 /* PerspectiveRectangleRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerspectiveRectangleRenderer.m; sourceTree = "<group>"; };
+		BAF92E5A14D6597B00994374 /* TriangleRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleRenderer.m; sourceTree = "<group>"; };
+		BAF92E5B14D6597B00994374 /* utility.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utility.c; sourceTree = "<group>"; };
+		BAF92E5C14D6597B00994374 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
+		BAF92E6D14D6647800994374 /* Renderers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderers.h; sourceTree = "<group>"; };
+		BAF92E6F14D6664A00994374 /* perspective_rectangle.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perspective_rectangle.f.glsl; sourceTree = "<group>"; };
+		BAF92E7014D6664A00994374 /* perspective_rectangle.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perspective_rectangle.v.glsl; sourceTree = "<group>"; };
+		BAF92E7114D6664A00994374 /* triangle.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = triangle.f.glsl; sourceTree = "<group>"; };
+		BAF92E7214D6664A00994374 /* triangle.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = triangle.v.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BA4AE48C14D1B87B00151F63 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA4AE48D14D1B87B00151F63 /* Cocoa.framework in Frameworks */,
-				BA4AE48E14D1B87B00151F63 /* OpenGL.framework in Frameworks */,
-				BA4AE48F14D1B87B00151F63 /* CoreVideo.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BADE991D14D0DEDD00F2CA68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,45 +68,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BADE999114D0EDC000F2CA68 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BADE999214D0EDC000F2CA68 /* Cocoa.framework in Frameworks */,
-				BADE999314D0EDC000F2CA68 /* OpenGL.framework in Frameworks */,
-				BADE999414D0EDC000F2CA68 /* CoreVideo.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BA4AE49D14D1B92800151F63 /* Cube */ = {
-			isa = PBXGroup;
-			children = (
-				BAA74F2214D1EE8300B9F697 /* shader.f.glsl */,
-				BAA74F2314D1EE8300B9F697 /* shader.v.glsl */,
-				BA4AE49E14D1B92800151F63 /* sandbox.c */,
-				BA93777814D1BD9D0091B521 /* vertices.h */,
-			);
-			path = Cube;
-			sourceTree = "<group>";
-		};
-		BA5312EF14D0EFC8000B4734 /* Triangle */ = {
-			isa = PBXGroup;
-			children = (
-				BACDB6DF14D0FEF9008AAC15 /* sandbox.c */,
-				BACDB6E014D0FEF9008AAC15 /* shader.f.glsl */,
-				BACDB6E114D0FEF9008AAC15 /* shader.v.glsl */,
-			);
-			name = Triangle;
-			sourceTree = "<group>";
-		};
 		BADE991514D0DEDD00F2CA68 = {
 			isa = PBXGroup;
 			children = (
-				BA4AE49D14D1B92800151F63 /* Cube */,
-				BA5312EF14D0EFC8000B4734 /* Triangle */,
+				BAF92E5214D6597B00994374 /* Source */,
+				BAF92E6E14D6664A00994374 /* Resources */,
 				BADE992A14D0DEDD00F2CA68 /* GLSandbox */,
 				BADE992314D0DEDD00F2CA68 /* Frameworks */,
 				BADE992114D0DEDD00F2CA68 /* Products */,
@@ -144,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				BADE992014D0DEDD00F2CA68 /* GLSandbox.app */,
-				BADE999C14D0EDC000F2CA68 /* Triangle.app */,
-				BA4AE49914D1B87B00151F63 /* Cube.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,10 +114,6 @@
 		BADE992A14D0DEDD00F2CA68 /* GLSandbox */ = {
 			isa = PBXGroup;
 			children = (
-				BACDB6EE14D111C6008AAC15 /* utility.h */,
-				BACDB6E614D10039008AAC15 /* utility.c */,
-				BA5312F614D0F152000B4734 /* sandbox.h */,
-				BA5312F714D0F152000B4734 /* sandbox.c */,
 				BADE993614D0DEDD00F2CA68 /* AppDelegate.h */,
 				BADE993714D0DEDD00F2CA68 /* AppDelegate.m */,
 				BADE993914D0DEDD00F2CA68 /* MainMenu.xib */,
@@ -198,26 +134,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BAF92E5214D6597B00994374 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BAF92E5314D6597B00994374 /* GLRenderer.h */,
+				BAF92E5414D6597B00994374 /* GLRenderer.m */,
+				BAF92E5514D6597B00994374 /* GLView.h */,
+				BAF92E5614D6597B00994374 /* GLView.m */,
+				BAF92E6D14D6647800994374 /* Renderers.h */,
+				BAF92E5714D6597B00994374 /* Renderers */,
+				BAF92E5B14D6597B00994374 /* utility.c */,
+				BAF92E5C14D6597B00994374 /* utility.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BAF92E5714D6597B00994374 /* Renderers */ = {
+			isa = PBXGroup;
+			children = (
+				BAF92E5814D6597B00994374 /* PerspectiveRectangleRenderer.m */,
+				BAF92E5A14D6597B00994374 /* TriangleRenderer.m */,
+			);
+			path = Renderers;
+			sourceTree = "<group>";
+		};
+		BAF92E6E14D6664A00994374 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BAF92E6F14D6664A00994374 /* perspective_rectangle.f.glsl */,
+				BAF92E7014D6664A00994374 /* perspective_rectangle.v.glsl */,
+				BAF92E7114D6664A00994374 /* triangle.f.glsl */,
+				BAF92E7214D6664A00994374 /* triangle.v.glsl */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BA4AE48614D1B87B00151F63 /* Cube */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BA4AE49614D1B87B00151F63 /* Build configuration list for PBXNativeTarget "Cube" */;
-			buildPhases = (
-				BA4AE48714D1B87B00151F63 /* Sources */,
-				BA4AE48C14D1B87B00151F63 /* Frameworks */,
-				BA4AE49014D1B87B00151F63 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Cube;
-			productName = GLSandbox;
-			productReference = BA4AE49914D1B87B00151F63 /* Cube.app */;
-			productType = "com.apple.product-type.application";
-		};
 		BADE991F14D0DEDD00F2CA68 /* GLSandbox */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BADE993E14D0DEDD00F2CA68 /* Build configuration list for PBXNativeTarget "GLSandbox" */;
@@ -233,23 +187,6 @@
 			name = GLSandbox;
 			productName = GLSandbox;
 			productReference = BADE992014D0DEDD00F2CA68 /* GLSandbox.app */;
-			productType = "com.apple.product-type.application";
-		};
-		BADE998D14D0EDC000F2CA68 /* Triangle */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BADE999914D0EDC000F2CA68 /* Build configuration list for PBXNativeTarget "Triangle" */;
-			buildPhases = (
-				BADE998E14D0EDC000F2CA68 /* Sources */,
-				BADE999114D0EDC000F2CA68 /* Frameworks */,
-				BADE999514D0EDC000F2CA68 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Triangle;
-			productName = GLSandbox;
-			productReference = BADE999C14D0EDC000F2CA68 /* Triangle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -273,25 +210,11 @@
 			projectRoot = "";
 			targets = (
 				BADE991F14D0DEDD00F2CA68 /* GLSandbox */,
-				BADE998D14D0EDC000F2CA68 /* Triangle */,
-				BA4AE48614D1B87B00151F63 /* Cube */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BA4AE49014D1B87B00151F63 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA4AE49114D1B87B00151F63 /* InfoPlist.strings in Resources */,
-				BA4AE49214D1B87B00151F63 /* Credits.rtf in Resources */,
-				BA4AE49314D1B87B00151F63 /* MainMenu.xib in Resources */,
-				BAA74F2414D1EE8300B9F697 /* shader.f.glsl in Resources */,
-				BAA74F2514D1EE8300B9F697 /* shader.v.glsl in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BADE991E14D0DEDD00F2CA68 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,54 +222,27 @@
 				BADE992F14D0DEDD00F2CA68 /* InfoPlist.strings in Resources */,
 				BADE993514D0DEDD00F2CA68 /* Credits.rtf in Resources */,
 				BADE993B14D0DEDD00F2CA68 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BADE999514D0EDC000F2CA68 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BADE999614D0EDC000F2CA68 /* InfoPlist.strings in Resources */,
-				BADE999714D0EDC000F2CA68 /* Credits.rtf in Resources */,
-				BADE999814D0EDC000F2CA68 /* MainMenu.xib in Resources */,
-				BACDB6E314D0FEF9008AAC15 /* shader.f.glsl in Resources */,
-				BACDB6E414D0FEF9008AAC15 /* shader.v.glsl in Resources */,
+				BAF92E7314D6664A00994374 /* perspective_rectangle.f.glsl in Resources */,
+				BAF92E7414D6664A00994374 /* perspective_rectangle.v.glsl in Resources */,
+				BAF92E7514D6664A00994374 /* triangle.f.glsl in Resources */,
+				BAF92E7614D6664A00994374 /* triangle.v.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BA4AE48714D1B87B00151F63 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA4AE48814D1B87B00151F63 /* main.m in Sources */,
-				BA4AE48914D1B87B00151F63 /* AppDelegate.m in Sources */,
-				BA4AE4A114D1B94C00151F63 /* sandbox.c in Sources */,
-				BA4AE48B14D1B87B00151F63 /* utility.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BADE991C14D0DEDD00F2CA68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BADE993114D0DEDD00F2CA68 /* main.m in Sources */,
 				BADE993814D0DEDD00F2CA68 /* AppDelegate.m in Sources */,
-				BA5312F814D0F152000B4734 /* sandbox.c in Sources */,
-				BA4AE49F14D1B92800151F63 /* sandbox.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BADE998E14D0EDC000F2CA68 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BADE998F14D0EDC000F2CA68 /* main.m in Sources */,
-				BADE999014D0EDC000F2CA68 /* AppDelegate.m in Sources */,
-				BACDB6E214D0FEF9008AAC15 /* sandbox.c in Sources */,
-				BACDB6E714D10039008AAC15 /* utility.c in Sources */,
+				BAF92E5D14D6597B00994374 /* GLRenderer.m in Sources */,
+				BAF92E5E14D6597B00994374 /* GLView.m in Sources */,
+				BAF92E5F14D6597B00994374 /* PerspectiveRectangleRenderer.m in Sources */,
+				BAF92E6014D6597B00994374 /* TriangleRenderer.m in Sources */,
+				BAF92E6114D6597B00994374 /* utility.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,28 +276,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BA4AE49714D1B87B00151F63 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GLSandbox/GLSandbox-Prefix.pch";
-				INFOPLIST_FILE = "GLSandbox/GLSandbox-Info.plist";
-				PRODUCT_NAME = Cube;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		BA4AE49814D1B87B00151F63 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GLSandbox/GLSandbox-Prefix.pch";
-				INFOPLIST_FILE = "GLSandbox/GLSandbox-Info.plist";
-				PRODUCT_NAME = Cube;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 		BADE993C14D0DEDD00F2CA68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -469,40 +343,9 @@
 			};
 			name = Release;
 		};
-		BADE999A14D0EDC000F2CA68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GLSandbox/GLSandbox-Prefix.pch";
-				INFOPLIST_FILE = "GLSandbox/GLSandbox-Info.plist";
-				PRODUCT_NAME = Triangle;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		BADE999B14D0EDC000F2CA68 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GLSandbox/GLSandbox-Prefix.pch";
-				INFOPLIST_FILE = "GLSandbox/GLSandbox-Info.plist";
-				PRODUCT_NAME = Triangle;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BA4AE49614D1B87B00151F63 /* Build configuration list for PBXNativeTarget "Cube" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA4AE49714D1B87B00151F63 /* Debug */,
-				BA4AE49814D1B87B00151F63 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		BADE991A14D0DEDD00F2CA68 /* Build configuration list for PBXProject "GLSandbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -517,15 +360,6 @@
 			buildConfigurations = (
 				BADE993F14D0DEDD00F2CA68 /* Debug */,
 				BADE994014D0DEDD00F2CA68 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BADE999914D0EDC000F2CA68 /* Build configuration list for PBXNativeTarget "Triangle" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BADE999A14D0EDC000F2CA68 /* Debug */,
-				BADE999B14D0EDC000F2CA68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

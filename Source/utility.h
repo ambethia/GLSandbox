@@ -9,6 +9,9 @@
 #ifndef GLSandbox_utility_h
 #define GLSandbox_utility_h
 
+#import <OpenGL/OpenGL.h>
+#import <OpenGL/gl3.h>
+
 GLuint createBuffer(GLenum target, GLsizei size, const void *data, GLenum type);
 
 GLuint createShader(GLenum type, const char *filename);

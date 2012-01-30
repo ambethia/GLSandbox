@@ -15,7 +15,6 @@
 
 #import <CoreFoundation/CFBundle.h>
 
-#include "sandbox.h"
 #include "utility.h"
 
 static void *file_contents(const char *filename, GLint *length)

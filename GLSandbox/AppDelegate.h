@@ -7,13 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <OpenGL/OpenGL.h>
-#import <OpenGL/gl3.h>
-#import <CoreVideo/CVDisplayLink.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSOpenGLView *view;
 
 @end
