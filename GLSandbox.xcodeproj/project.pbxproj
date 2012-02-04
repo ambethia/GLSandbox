@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1F46F914DC6D85008D280F /* matrixUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = BA1F46F514DC6D85008D280F /* matrixUtil.c */; };
+		BA1F46FA14DC6D85008D280F /* vectorUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = BA1F46F714DC6D85008D280F /* vectorUtil.c */; };
+		BA1F470014DC86B1008D280F /* pos_color_local_transform.v.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BA1F46FF14DC86B1008D280F /* pos_color_local_transform.v.glsl */; };
+		BA1F470214DC86EC008D280F /* color_passthrough.f.glsl in Resources */ = {isa = PBXBuildFile; fileRef = BA1F470114DC86EC008D280F /* color_passthrough.f.glsl */; };
+		BA6F40A814D88C94004BAE07 /* TranslationRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6F40A714D88C94004BAE07 /* TranslationRenderer.m */; };
 		BADE992514D0DEDD00F2CA68 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE992414D0DEDD00F2CA68 /* Cocoa.framework */; };
 		BADE992F14D0DEDD00F2CA68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BADE992D14D0DEDD00F2CA68 /* InfoPlist.strings */; };
 		BADE993114D0DEDD00F2CA68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE993014D0DEDD00F2CA68 /* main.m */; };
@@ -27,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA1F46F514DC6D85008D280F /* matrixUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrixUtil.c; sourceTree = "<group>"; };
+		BA1F46F614DC6D85008D280F /* matrixUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrixUtil.h; sourceTree = "<group>"; };
+		BA1F46F714DC6D85008D280F /* vectorUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vectorUtil.c; sourceTree = "<group>"; };
+		BA1F46F814DC6D85008D280F /* vectorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vectorUtil.h; sourceTree = "<group>"; };
+		BA1F46FF14DC86B1008D280F /* pos_color_local_transform.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pos_color_local_transform.v.glsl; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		BA1F470114DC86EC008D280F /* color_passthrough.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = color_passthrough.f.glsl; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		BA6F40A714D88C94004BAE07 /* TranslationRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationRenderer.m; sourceTree = "<group>"; };
 		BADE992014D0DEDD00F2CA68 /* GLSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BADE992414D0DEDD00F2CA68 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BADE992714D0DEDD00F2CA68 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -70,12 +82,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA03102F14D96D94002214CF /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				BA1F46F514DC6D85008D280F /* matrixUtil.c */,
+				BA1F46F614DC6D85008D280F /* matrixUtil.h */,
+				BA1F46F714DC6D85008D280F /* vectorUtil.c */,
+				BA1F46F814DC6D85008D280F /* vectorUtil.h */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
 		BADE991514D0DEDD00F2CA68 = {
 			isa = PBXGroup;
 			children = (
 				BAF92E5214D6597B00994374 /* Source */,
 				BAF92E6E14D6664A00994374 /* Resources */,
 				BADE992A14D0DEDD00F2CA68 /* GLSandbox */,
+				BA03102F14D96D94002214CF /* Vendor */,
 				BADE992314D0DEDD00F2CA68 /* Frameworks */,
 				BADE992114D0DEDD00F2CA68 /* Products */,
 			);
@@ -152,6 +176,7 @@
 			children = (
 				BAF92E5814D6597B00994374 /* PerspectiveRectangleRenderer.m */,
 				BAF92E5A14D6597B00994374 /* TriangleRenderer.m */,
+				BA6F40A714D88C94004BAE07 /* TranslationRenderer.m */,
 			);
 			path = Renderers;
 			sourceTree = "<group>";
@@ -163,6 +188,8 @@
 				BAF92E7014D6664A00994374 /* perspective_rectangle.v.glsl */,
 				BAF92E7114D6664A00994374 /* triangle.f.glsl */,
 				BAF92E7214D6664A00994374 /* triangle.v.glsl */,
+				BA1F46FF14DC86B1008D280F /* pos_color_local_transform.v.glsl */,
+				BA1F470114DC86EC008D280F /* color_passthrough.f.glsl */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -224,6 +251,8 @@
 				BAF92E7414D6664A00994374 /* perspective_rectangle.v.glsl in Resources */,
 				BAF92E7514D6664A00994374 /* triangle.f.glsl in Resources */,
 				BAF92E7614D6664A00994374 /* triangle.v.glsl in Resources */,
+				BA1F470014DC86B1008D280F /* pos_color_local_transform.v.glsl in Resources */,
+				BA1F470214DC86EC008D280F /* color_passthrough.f.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +270,9 @@
 				BAF92E5F14D6597B00994374 /* PerspectiveRectangleRenderer.m in Sources */,
 				BAF92E6014D6597B00994374 /* TriangleRenderer.m in Sources */,
 				BAF92E6114D6597B00994374 /* utility.c in Sources */,
+				BA6F40A814D88C94004BAE07 /* TranslationRenderer.m in Sources */,
+				BA1F46F914DC6D85008D280F /* matrixUtil.c in Sources */,
+				BA1F46FA14DC6D85008D280F /* vectorUtil.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +358,7 @@
 				GCC_PREFIX_HEADER = "GLSandbox/GLSandbox-Prefix.pch";
 				INFOPLIST_FILE = "GLSandbox/GLSandbox-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -337,6 +370,7 @@
 				GCC_PREFIX_HEADER = "GLSandbox/GLSandbox-Prefix.pch";
 				INFOPLIST_FILE = "GLSandbox/GLSandbox-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

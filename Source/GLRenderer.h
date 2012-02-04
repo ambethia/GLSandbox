@@ -20,7 +20,8 @@
 
 @end
 
-#define CURRENT_RENDERER PerspectiveRectangleRenderer
+#define CURRENT_RENDERER TranslationRenderer
 
 @interface PerspectiveRectangleRenderer : GLRenderer @end
 @interface TriangleRenderer : GLRenderer @end
+@interface TranslationRenderer : GLRenderer @end
